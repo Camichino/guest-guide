@@ -10,7 +10,7 @@
 <style>
 :root {
   --cream: #eeeae4;
-  --taupe: #99887a;
+  --taupe: #7a6a5c;
   --brown: #473d36;
   --charcoal: #252626;
   --oxblood: #490A0A;
@@ -165,7 +165,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
   font-weight: 600; color: var(--charcoal); line-height: 1;
 }
 .stat-sub {
-  font-size: 11px; font-weight: 200;
+  font-size: 11px; font-weight: 300;
   color: var(--taupe); margin-top: 4px; line-height: 1.5;
 }
 
@@ -200,7 +200,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
   width: 200px; height: 200px;
   background: radial-gradient(ellipse, rgba(73,10,10,0.4) 0%, transparent 70%);
 }
-.wifi-card .stat-label { color: rgba(153,136,122,0.75); }
+.wifi-card .stat-label { color: rgba(122,106,92,0.9); }
 .wifi-network { font-family: 'Bodoni Moda', serif; font-size: 20px; font-weight: 600; color: var(--cream); margin-bottom: 16px; }
 .wifi-pw-row { display: flex; align-items: center; gap: 12px; }
 .wifi-pw {
@@ -216,7 +216,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
   flex-shrink: 0; transition: opacity 0.2s;
 }
 .copy-btn:hover { opacity: 0.85; }
-.wifi-note { font-size: 11px; font-weight: 200; color: rgba(153,136,122,0.8); margin-top: 8px; }
+.wifi-note { font-size: 11px; font-weight: 300; color: rgba(122,106,92,0.95); margin-top: 8px; }
 
 /* Steps */
 .step-list { display: flex; flex-direction: column; gap: 0; }
@@ -233,7 +233,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
   flex-shrink: 0; margin-top: 1px;
 }
 .step-title { font-weight: 400; font-size: 14px; color: var(--charcoal); margin-bottom: 3px; }
-.step-desc { font-size: 12px; font-weight: 200; color: var(--taupe); line-height: 1.6; }
+.step-desc { font-size: 12px; font-weight: 300; color: var(--taupe); line-height: 1.6; }
 
 /* Rules */
 .rule-list { display: flex; flex-direction: column; }
@@ -244,7 +244,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
 .rule:last-child { border-bottom: none; }
 .rule-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
 .rule-title { font-weight: 400; font-size: 14px; color: var(--charcoal); margin-bottom: 3px; }
-.rule-desc { font-size: 12px; font-weight: 200; color: var(--taupe); line-height: 1.6; }
+.rule-desc { font-size: 12px; font-weight: 300; color: var(--taupe); line-height: 1.6; }
 
 /* Room chips */
 .chip-wrap { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
@@ -274,7 +274,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
   letter-spacing: 0.2em; margin-bottom: 6px;
 }
 .transit-title { font-weight: 400; font-size: 14px; color: var(--charcoal); margin-bottom: 6px; }
-.transit-desc { font-size: 12px; font-weight: 200; color: var(--taupe); line-height: 1.7; }
+.transit-desc { font-size: 12px; font-weight: 300; color: var(--taupe); line-height: 1.7; }
 
 /* Notice */
 .notice {
@@ -328,7 +328,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
   padding: 28px 24px; text-align: center; margin-top: 24px;
 }
 .review-q { font-family: 'Bodoni Moda', serif; font-size: 60px; color: rgba(73,10,10,0.4); line-height: 0.7; margin-bottom: 12px; }
-.review-t { font-size: 13px; font-weight: 200; color: rgba(175,162,152,0.8); margin-bottom: 20px; line-height: 1.7; }
+.review-t { font-size: 13px; font-weight: 300; color: #7a6a5c; margin-bottom: 20px; line-height: 1.7; }
 .review-btn {
   display: inline-block; background: var(--oxblood); color: var(--cream);
   padding: 13px 32px; border-radius: 8px; text-decoration: none;
@@ -353,7 +353,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
   align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px;
 }
 .contact-name { font-family: 'Bodoni Moda', serif; font-size: 20px; font-weight: 600; color: var(--cream); margin-bottom: 4px; }
-.contact-sub { font-size: 11px; font-weight: 200; color: var(--taupe); }
+.contact-sub { font-size: 11px; font-weight: 300; color: var(--taupe); }
 .cbtns { display: flex; gap: 8px; }
 .cbtn {
   padding: 10px 18px; border-radius: 8px;
@@ -483,7 +483,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
         <div class="accent-card" style="margin-top:0;">
           <div class="stat-label">Your Stay</div>
           <div class="stat-val" style="font-size:20px;margin-bottom:6px;">118 W 21st Street</div>
-          <div class="stat-sub">Bayonne, NJ &nbsp;·&nbsp; ~45 min to Manhattan by transit &nbsp;·&nbsp; Free parking</div>
+          <div class="stat-sub">Bayonne, NJ &nbsp;·&nbsp; ~45–60 min to Manhattan by transit &nbsp;·&nbsp; Free parking</div>
           <a href="https://www.google.com/maps/dir/?api=1&destination=40.664923,-74.124669" target="_blank"
              style="display:inline-block;margin-top:14px;padding:8px 18px;background:rgba(238,234,228,0.12);color:var(--cream);border-radius:6px;font-family:'Tenor Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(238,234,228,0.2);">
             Get Directions →
@@ -536,7 +536,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
         <div class="notice">🔒 Access is reserved exclusively for registered guests. Your code expires automatically at checkout.</div>
         <div class="info-card" style="margin-top:12px;">
           <div class="info-card-title">Neighbourhood</div>
-          <div style="font-size:12px;font-weight:200;color:var(--taupe);line-height:2.1;">
+          <div style="font-size:12px;font-weight:300;color:var(--taupe);line-height:2.1;">
             <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=Journal+Square,+Jersey+City,+NJ" target="_blank" style="color:var(--oxblood);text-decoration:none;">Jersey City</a> &nbsp;·&nbsp; 10–15 min by car &nbsp;&nbsp;
             <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=Hoboken+Terminal,+NJ" target="_blank" style="color:var(--oxblood);text-decoration:none;">Hoboken</a> &nbsp;·&nbsp; 20–25 min by transit &nbsp;&nbsp;
             <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=Midtown+Manhattan,+New+York,+NY" target="_blank" style="color:var(--oxblood);text-decoration:none;">Manhattan</a> &nbsp;·&nbsp; 35–45 min by transit &nbsp;&nbsp;
@@ -645,7 +645,7 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
                 <span class="chip">Samsung washer + dryer</span><span class="chip">Powder detergent</span>
                 <span class="chip">Cordless vacuum</span><span class="chip">Wet/dry spot cleaner</span>
               </div>
-              <div style="margin-top:8px;font-size:11px;color:var(--taupe);font-weight:200;">Located in hallway closet next to the main bathroom.</div>
+              <div style="margin-top:8px;font-size:11px;color:var(--taupe);font-weight:300;">Located in hallway closet next to the main bathroom.</div>
             </div>
           </div>
         </div>
@@ -687,10 +687,10 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
         <div class="transit-card">
           <div class="transit-icon">🚈</div>
           <div>
-            <div class="transit-badge">~45–55 min to Midtown</div>
+            <div class="transit-badge">~50–60 min to Midtown</div>
             <div class="transit-title">Hudson-Bergen Light Rail → PATH Train</div>
             <div class="transit-desc">
-              Walk ~5 min to <strong>22nd Street Light Rail station</strong> → ride to Exchange Place, Jersey City (~20 min) → transfer to PATH train → Manhattan (~20 min). Fare ~$5.50 total.<br><br>
+              Walk ~5 min to <strong>22nd Street Light Rail station</strong> → ride to Exchange Place, Jersey City (~15 min) → transfer to PATH → World Trade Center (~10 min) or Midtown (~25 min). Fare ~$5.90 total.<br><br>
               <a href="https://www.njtransit.com/light-rail-to" target="_blank" style="color:var(--oxblood);font-size:11px;">NJ Transit Light Rail Info</a> &nbsp;·&nbsp;
               <a href="https://www.panynj.gov/path/en/schedules-maps.html" target="_blank" style="color:var(--oxblood);font-size:11px;">PATH Schedules & Maps</a>
             </div>
@@ -700,10 +700,10 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
         <div class="transit-card">
           <div class="transit-icon">🚌</div>
           <div>
-            <div class="transit-badge">~65–80 min to Port Authority / Times Square</div>
+            <div class="transit-badge">~60–75 min to Port Authority / Times Square</div>
             <div class="transit-title">Route 119 Bus — Direct to Manhattan</div>
             <div class="transit-desc">
-              One-seat ride from JFK Blvd stops in Bayonne directly to Port Authority Bus Terminal at 42nd St &amp; 8th Ave — steps from Times Square. Runs every 15–30 min.<br><br>
+              One-seat ride from JFK Blvd stops in Bayonne directly to Port Authority Bus Terminal at 42nd St &amp; 8th Ave — steps from Times Square. Runs every 15–40 min.<br><br>
               <a href="https://www.njtransit.com/" target="_blank" style="color:var(--oxblood);font-size:11px;">NJ Transit Website</a> &nbsp;·&nbsp;
               <a href="https://mybusnow.njtransit.com/bustime/wireless/html/selectdirection.jsp?route=119" target="_blank" style="color:var(--oxblood);font-size:11px;">Route 119 Real-Time Tracker</a>
             </div>
@@ -713,10 +713,10 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
         <div class="transit-card">
           <div class="transit-icon">⛵</div>
           <div>
-            <div class="transit-badge">~35–40 min · Scenic Hudson River crossing</div>
+            <div class="transit-badge">~35–45 min · Scenic Hudson River crossing</div>
             <div class="transit-title">NY Waterway Ferry → Brookfield Place</div>
             <div class="transit-desc">
-              Take Light Rail to Exchange Place (~20 min) → walk 1 block to <strong>Paulus Hook Ferry Terminal</strong> → ferry to Brookfield Place/Battery Park City (~7 min). Steps off directly at Brookfield Place waterfront entrance. Runs year-round, 7 days a week. Fare ~$10.50 total from property.<br><br>
+              Take Light Rail to Exchange Place (~15 min) → walk 1 block to <strong>Paulus Hook Ferry Terminal</strong> → ferry to Brookfield Place/Battery Park City (~7 min). Steps off directly at Brookfield Place waterfront entrance. Fare ~$13 total from property, light rail and ferry combined. Check the NY Waterway schedule before you go, as departure times vary by day.<br><br>
               <a href="https://www.nywaterway.com/PaulusHook-WTCRoute.aspx" target="_blank" style="color:var(--oxblood);font-size:11px;">NY Waterway Ferry Schedules</a>
             </div>
           </div>
@@ -728,10 +728,10 @@ html, body { height: 100%; background: var(--bg); color: var(--charcoal); font-f
             <div class="transit-badge">By Car or Rideshare</div>
             <div class="transit-title">Uber / Lyft Estimates</div>
             <div class="transit-desc">
-              <strong>Note:</strong> All NJ→NYC rides include a $20 NJ surcharge + $4.25 NYC congestion fee.<br><br>
+              <strong>Note:</strong> Rides between NJ and NYC include a $20 cross state surcharge with tolls included. Trips into Manhattan below 60th Street also carry congestion surcharges of about $4.25.<br><br>
               <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=Times+Square,+NYC" target="_blank" style="color:var(--oxblood);">Manhattan / Times Square</a> — ~$55–80 · 35–55 min<br>
               <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=Brookfield+Place,+230+Vesey+Street,+New+York,+NY" target="_blank" style="color:var(--oxblood);">Brookfield Place NYC</a> — ~$50–75 · 30–50 min<br>
-              <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=Newark+Liberty+International+Airport" target="_blank" style="color:var(--oxblood);">Newark Airport (EWR)</a> — ~$15–30 · 15–20 min<br>
+              <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=Newark+Liberty+International+Airport" target="_blank" style="color:var(--oxblood);">Newark Airport (EWR)</a> — ~$30–45 · 20–25 min<br>
               <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=Jersey+City,+NJ" target="_blank" style="color:var(--oxblood);">Jersey City Downtown</a> — ~$12–25 · 10–20 min<br>
               <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=MetLife+Stadium,+East+Rutherford,+NJ" target="_blank" style="color:var(--oxblood);">MetLife Stadium</a> — ~$30–55 base · $80–150+ post-event<br>
               <a href="https://www.google.com/maps/dir/?api=1&origin=118+W+21st+Street,+Bayonne,+NJ&destination=American+Dream+Mall,+East+Rutherford,+NJ" target="_blank" style="color:var(--oxblood);">American Dream Mall</a> — ~$30–50 · 25–40 min<br><br>
@@ -923,8 +923,8 @@ const LPOIS = [
   {name:"American Dream Mall",          cat:"attractions",info:"Indoor ski, water park, shopping · ~30 min",phone:"(833) 263-7326",lat:40.8134,  lng:-74.0691,    color:"#2A5A2A"},
   {name:"MetLife Stadium",              cat:"attractions",info:"Giants, Jets & major concerts · ~30 min", phone:"(201) 559-1500", lat:40.8135,    lng:-74.0745,    color:"#2A5A2A"},
   {name:"Downtown Jersey City",         cat:"attractions",info:"Waterfront · NYC skyline views · ~15 min",phone:"",              lat:40.7178,    lng:-74.0431,    color:"#2A5A2A"},
-  {name:"Times Square NYC",             cat:"attractions",info:"The classic NYC experience · ~35–45 min via Light Rail + PATH", phone:"",              lat:40.7580,    lng:-73.9855,    color:"#2A5A2A"},
-  {name:"Brookfield Place",              cat:"attractions",info:"Luxury shopping, dining & Hudson River views · Ferry from Paulus Hook · ~35–40 min", phone:"",              lat:40.7152,    lng:-74.0153,    color:"#2A5A2A"},
+  {name:"Times Square NYC",             cat:"attractions",info:"The classic NYC experience · ~50–60 min via Light Rail + PATH", phone:"",              lat:40.7580,    lng:-73.9855,    color:"#2A5A2A"},
+  {name:"Brookfield Place",              cat:"attractions",info:"Luxury shopping, dining & Hudson River views · Ferry from Paulus Hook · ~35–45 min", phone:"",              lat:40.7152,    lng:-74.0153,    color:"#2A5A2A"},
   {name:"Hand & Stone Massage",         cat:"wellness",   info:"Massage & Facials · 193 E 22nd St",       phone:"(551) 393-4851",lat:40.6597749, lng:-74.1106134, color:"#4A2A6B"},
 ];
 
@@ -980,7 +980,7 @@ function openPoi(p) {
       <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;">
         <div>
           <div style="font-size:14px;font-weight:400;color:var(--charcoal);margin-bottom:3px;">${p.name}</div>
-          <div style="font-size:12px;font-weight:200;color:var(--taupe);line-height:1.6;margin-bottom:6px;">${p.info}</div>
+          <div style="font-size:12px;font-weight:300;color:var(--taupe);line-height:1.6;margin-bottom:6px;">${p.info}</div>
           ${ph}
         </div>
         <button onclick="document.getElementById('poiDrawer').innerHTML=''" style="background:none;border:none;cursor:pointer;font-size:16px;color:var(--taupe);flex-shrink:0;">✕</button>
