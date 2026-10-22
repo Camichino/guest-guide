@@ -839,14 +839,26 @@ const checkout = params.get('checkout');
 
 function fmtDate(d) {
   if (!d) return '—';
-  const [y,m,day] = d.split('-');
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  return `${months[parseInt(m)-1]} ${parseInt(day)}, ${y}`;
+  const iso = d.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (iso) return `${months[parseInt(iso[2])-1]} ${parseInt(iso[3])}, ${iso[1]}`;
+  const parsed = new Date(d);
+  if (!isNaN(parsed)) return `${months[parsed.getMonth()]} ${parsed.getDate()}, ${parsed.getFullYear()}`;
+  return '—';
 }
 
 if (guestName) {
-  document.getElementById('greetingText').innerHTML = `Good to have you,<br><strong>${guestName}.</strong>`;
-  document.getElementById('greetingEyebrow').textContent = 'Welcome to Camichino';
+  const clean = guestName.replace(/[<>&"']/g, '').trim().slice(0, 40);
+  if (clean) {
+    const g = document.getElementById('greetingText');
+    g.textContent = '';
+    g.appendChild(document.createTextNode('Good to have you,'));
+    g.appendChild(document.createElement('br'));
+    const strong = document.createElement('strong');
+    strong.textContent = clean + '.';
+    g.appendChild(strong);
+    document.getElementById('greetingEyebrow').textContent = 'Welcome to Camichino';
+  }
 }
 document.getElementById('checkinDate').textContent = fmtDate(checkin);
 document.getElementById('checkoutDate').textContent = fmtDate(checkout);
